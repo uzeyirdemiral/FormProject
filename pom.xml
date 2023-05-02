@@ -11,8 +11,8 @@
     <groupId>com.uzeyirdemiral</groupId>
     <artifactId>FormProject</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>JavaTutorialsCommonData</name>
-    <description>JavaTutorialsCommonData</description>
+    <name>FormProject</name>
+    <description>FormProject</description>
 
     <properties>
         <encoding>UTF-8</encoding>
