@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="../static/css/style.css"> -->
+    <link rel="stylesheet"   th:href="@{/css/style.css}">
 
 <body>
     <div class="signup-form">
@@ -31,7 +32,7 @@
             <input type="email" name="email" id="txt" placeholder="Email">
             <input type="password" name="password" id="txt" placeholder="Password">
             <input type="password" name="password" id="txt" placeholder="Confirm Password">
-            <input type="button" class="btn " value="CREATE ACCOUNT">
+            <input type="submit" class="btn " value="CREATE ACCOUNT">
             <small>Already have an account?</small>
             <a href="#">Sign In</a>
         </form>
@@ -49,6 +50,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script src="../static/js/template.js"></script>
 </body>
 
 </html>
