@@ -19,7 +19,6 @@ h1 {
     left: 50%;
     transform: translate(-50%, -50%);
     overflow: hidden;
-    /* background-color:wheat; */
 }
 
 .btn {
@@ -58,13 +57,12 @@ a {
     color: purple;
 }
 
-.btn1 {
+.btn1 .btn2 .btn3{
     width: 3rem;
     height: 3rem;
     border-radius: 50rem;
     display: inline-block;
     cursor: pointer;
-    /* color: blue; */
     border: 1px solid rgb(153, 149, 146);
     background-color: white;
     margin: auto 0.5rem;
