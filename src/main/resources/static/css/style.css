@@ -57,7 +57,7 @@ a {
     color: purple;
 }
 
-.btn1 .btn2 .btn3{
+.btn1,.btn2,.btn3{
     width: 3rem;
     height: 3rem;
     border-radius: 50rem;
