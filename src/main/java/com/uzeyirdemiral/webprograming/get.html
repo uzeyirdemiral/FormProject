@@ -44,7 +44,6 @@
             })//end get
 
             let list=(data)=>{
-                // let tablerow=``;
                 let tbody=$('#body_id');
                 for (var i = 0; i < data.length; i++){
                     var row = '<tr>' +
@@ -62,30 +61,27 @@
         $(document).ready(function(){
             $("#get_id").click(function () {
                 const url ="http://localhost:8080/api/jquery/get";
-            $.get(url,function(data,status){
-                if(status=="success"){
-                   console.log(data);
-                    list(data); 
-                }
+                $.get(url,function(data,status){
+                    if(status=="success"){
+                        console.log(data);
+                        list(data); 
+                    }
                 
-            })//end get
+                })//end get
 
-            let list=(data)=>{
-                // let tablerow=``;
+                let list=(data)=>{
                 let tbody=$('#body_id');
-                for (var i = 0; i < data.length; i++){
-                    var row = '<tr>' +
-                        '<td>' + data[i].id + '</td>' +
-                        '<td>' + data[i].firstname + '</td>' +
-                        '<td>' + data[i].email + '</td>' +
-                        '<td>' + data[i].password + '</td>' +
-                        '<td>' + data[i].confirmpasswd + '</td>' +
-                        '</tr>';
-                    tbody.append(row);
+                    for (var i = 0; i < data.length; i++){
+                        var row = '<tr>' +
+                            '<td>' + data[i].id + '</td>' +
+                            '<td>' + data[i].firstname + '</td>' +
+                            '<td>' + data[i].email + '</td>' +
+                            '<td>' + data[i].password + '</td>' +
+                            '<td>' + data[i].confirmpasswd + '</td>' +
+                            '</tr>';
+                        tbody.append(row);
+                    }
                 }
-            }
-
-                
             })
         })
     </script>
