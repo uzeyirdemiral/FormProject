@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html  xmlns:th="http://www.thymeleaf.org">
 
 <head>
     <meta charset="UTF-8">
@@ -13,14 +13,16 @@
     <!-- <link rel="stylesheet" href="../static/css/style.css"> -->
     <link rel="stylesheet"   th:href="@{/css/style.css}">
     <link rel="stylesheet" href="../static/css/style.css">
+    
 
 <body>
     <div class="signup-form">
-        <form action="index.html">
+        <!-- <form th:method="post" th:action="@{/post.html}" th:object="${register}"> -->
+        <form  action="#">
             <h1>REGISTER</h1>
-            
+
             <button class="btn1" type="submit" >
-                <i class="fa-brands fa-facebook-f"></i>
+                <i  class="fa-brands fa-facebook-f"></i>
             </button>
             <button class="btn2" type="submit" >
                 <i class="fa-brands fa-google"></i>
@@ -29,10 +31,21 @@
                 <i class="fa-brands fa-youtube"></i>
             </button>
             <small style="display: block;"> or use your email address: </small>
-            <input type="text" name="firstname" id="txt" placeholder="First Name">
-            <input type="email" name="email" id="txt" placeholder="Email">
-            <input type="password" name="password" id="txt" placeholder="Password">
-            <input type="password" name="password" id="txt" placeholder="Confirm Password">
+            <input type="text" name="firstname" id="firstname" placeholder="First Name">
+            <!-- <input th:field="*{registerFirstName}" type="text" name="firstname" id="firstname" placeholder="First Name"> -->
+            <!-- <small class="text-danger" th:if="${#fields.hasErrors('registerFirstName')}" th:errors="*{registerFirstName}"></small> -->
+
+            <input  type="email" name="email" id="email" placeholder="Email">
+            <!-- <input th:field="*{registerEmail}" type="email" name="email" id="email" placeholder="Email"> -->
+            <!-- <small class="text-danger" th:if="${#fields.hasErrors('registerEmail')}" th:errors="*{registerEmail}"></small> -->
+
+            <input type="password" name="password" id="password" placeholder="Password">
+            <!-- <input th:field="*{registerPassword}" type="password" name="password" id="password" placeholder="Password"> -->
+            <!-- <small class="text-danger" th:if="${#fields.hasErrors('registerPassword')}" th:errors="*{registerPassword}"></small> -->
+
+            <input type="password" name="password" id="confirmpswd" placeholder="Confirm Password">
+            <!-- <input th:field="*{registerConfirmPswd}" type="password" name="password" id="confirmpswd" placeholder="Confirm Password"> -->
+            <!-- <small class="text-danger" th:if="${#fields.hasErrors('registerConfirmPswd')}" th:errors="*{registerConfirmPswd}"></small> -->
             <input type="submit" class="btn " value="CREATE ACCOUNT">
             <small>Already have an account?</small>
             <a href="#">Sign In</a>
